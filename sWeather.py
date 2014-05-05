@@ -82,7 +82,8 @@ if __name__ == "__main__":
             upclock = 0
         upclock += 1
         ssend(res)
-        sleep(args.delay)
+        #sleep for data/char per second, to prevent data overwritng
+        sleep(len(res)/3)
 
 
 
